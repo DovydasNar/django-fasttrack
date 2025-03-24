@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apie autoriu</title>
+</head>
+<body>
+<h1>Autorius: {{ vardas }}</h1>
+<h2>Pomegiai:</h2>
+<ul>
+  {% for pomegis in pomegiai %}
+     <li>{{ pomegis }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
