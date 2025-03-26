@@ -20,12 +20,10 @@ from blogas import views
 
 from django.contrib import admin
 from django.urls import path
+from registration_system import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('kontaktai/', views.kontaktai, name='kontaktai'),
-    path('naujienos/', views.naujienos, name='naujienos'),
-    path('apie/', views.apie, name='apie'),
-    path('autorius/', views.autorius, name='autorius'),
-    path('', views.home, name='home'),
+    path('registration/', views.registration, name='registration'),
+    path('', views.users, name='users'),
 ]
